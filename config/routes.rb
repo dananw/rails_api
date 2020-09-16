@@ -9,7 +9,7 @@ Rails.application.routes.draw do
         delete "log_out", to: "sessions#destroy"
       end
 
-      post "facebook", to "users#facebook"
+      post "facebook", to: "users#facebook"
     end
   end
 end

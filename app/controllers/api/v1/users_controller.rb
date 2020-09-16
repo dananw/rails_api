@@ -19,7 +19,7 @@ class Api::V1::UsersController < ApplicationController
         user.authentication_token = User.generate_unique_secure_token
 
         if user.save
-          json_response "Login Facebook Successfuly", true, {user: user}, :ok
+          json_response "Login Facebook Successfully", true, {user: user}, :ok
         else
           json_response user.error, false, {}, :unprocessable_entity
         end
